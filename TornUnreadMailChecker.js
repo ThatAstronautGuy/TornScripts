@@ -22,7 +22,7 @@ const updateInterval = 60000; // Update interval in milliseconds. 60k is 1 minut
 const fromTimeStamp = Math.floor((Date.now() - periodToCheckInDays * 24 * 60 * 60 * 1000) / 1000);
 const lastCheck = GM_getValue("unreadMailCheckTimestamp", 0);
 const currentTime = Math.floor(Date.now());
-const debugEnabled = true;
+const debugEnabled = false;
 var currentUnreadMails = GM_getValue("currentUnreadMails", 0);
 
 let counterStyle = `
