@@ -16,7 +16,7 @@
 // @updateURL    https://raw.githubusercontent.com/ThatAstronautGuy/TornScripts/refs/heads/main/TornUnreadMailChecker.js
 // ==/UserScript==
 
-/* 
+/*
 This script displays your unread mails count on your mail icon in Torn.
 
 Tos:
@@ -28,6 +28,7 @@ Key access level: Messages selection only. Custom link below.
 
 To make a key use this custom link: https://www.torn.com/preferences.php#tab=api?step=addNewKey&user=messages&title=UnreadMailChecker
 */
+
 const apiKey = '';
 const periodToCheckInDays = 7;
 const updateInterval = 60000; // Update interval in milliseconds. 60k is 1 minute.
