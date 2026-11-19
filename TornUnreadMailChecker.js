@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Torn Unread Mail Checker
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Uses the API to check how many unread mails you have
 // @author       ThtAstronautGuy[1977683]
 // @match        https://www.torn.com/*
@@ -16,6 +16,18 @@
 // @updateURL    https://raw.githubusercontent.com/ThatAstronautGuy/TornScripts/refs/heads/main/TornUnreadMailChecker.js
 // ==/UserScript==
 
+/* 
+This script displays your unread mails count on your mail icon in Torn.
+
+Tos:
+Data storage: None
+Data sharing: None
+Purpose of use: Checking unread mails
+Key Storage & Sharing: Stored in script variable and not shared
+Key access level: Messages selection only. Custom link below.
+
+To make a key use this custom link: https://www.torn.com/preferences.php#tab=api?step=addNewKey&user=messages&title=UnreadMailChecker
+*/
 const apiKey = '';
 const periodToCheckInDays = 7;
 const updateInterval = 60000; // Update interval in milliseconds. 60k is 1 minute.
